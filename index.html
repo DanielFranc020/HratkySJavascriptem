@@ -4,22 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kouzelná školka</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="glide.core.min.css">
+
     <script src="https://api.mapy.cz/loader.js"></script>
 	<script>Loader.load()</script>
 </head>
 <body>
-    <h1>Hello world!</h1>
+    <div class="introduction">
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="IMG/michal1.jpg" alt="michal - hrdina ceske kinematografie nejvetsiho kalibru"></li>
+            <li class="glide__slide"><img src="IMG/majda1.jpg" alt="majda - topozni zena s burinkou, ktera se nezridka "></li>
+            <li class="glide__slide"><img src="IMG/jitka1.jpg" alt="jitka - vetsi kytaristicky vzor nez bryan may"></li>
+            <li class="glide__slide"><img src="IMG/matous1.jpg" alt="matous - novy prirustek, na statni vyznamenani to neni, ale da se"></li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        new Glide('.glide').mount()
+    </script>
+    
     <script src="script.js"></script>    
+
+    
     <div id="mapa" style="width:600px; height:400px;"></div>
+
 	<script type="text/javascript">
 		var stred = SMap.Coords.fromWGS84(14.4259, 50.0501);
 		var mapa = new SMap(JAK.gel("mapa"), stred, 17);
 		mapa.addDefaultLayer(SMap.DEF_BASE).enable();
 		mapa.addDefaultControls();	      	      
 	</script>
+
     <footer>
         <a href="https://github.com/DanielFranc020/HratkySJavascriptem">Source code</a>
     </footer>
+
 </body>
 </html>
