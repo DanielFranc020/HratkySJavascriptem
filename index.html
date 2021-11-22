@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kouzelná školka</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://api.mapy.cz/loader.js"></script>
+	<script>Loader.load()</script>
 </head>
 <body>
     <h1>Hello world!</h1>
     <script src="script.js"></script>    
+    <div id="mapa" style="width:600px; height:400px;"></div>
+	<script type="text/javascript">
+		var stred = SMap.Coords.fromWGS84(14.4259, 50.0501);
+		var mapa = new SMap(JAK.gel("mapa"), stred, 17);
+		mapa.addDefaultLayer(SMap.DEF_BASE).enable();
+		mapa.addDefaultControls();	      	      
+	</script>
     <footer>
         <a href="https://github.com/DanielFranc020/HratkySJavascriptem">Source code</a>
     </footer>
