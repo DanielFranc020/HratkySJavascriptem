@@ -25,17 +25,26 @@
           </ul>
         </div>
         <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="IMG/left.png" alt="levo"></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="IMG/right.png" alt="pravo"></button>
           </div>
         </div>
       </div>
     </div>
-
     <script>
-        new Glide('.glide').mount()
+      const config = {
+        type: "carousel",
+        perView: 1
+      };
+        new Glide('.glide', config).mount()
     </script>
     
+    <div class="welcome">
+      <h1>Toto jsou hrdinové mého dětství</h1>
+    </div>
+
+
+
     <script src="script.js"></script>    
 
     
