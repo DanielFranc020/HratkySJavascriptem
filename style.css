@@ -4,14 +4,29 @@
 }
 
 .grid {
-    margin: 25% 0 25% 0;
+    margin: 8% 0 8% 0;
     display:grid;
     grid-template-columns: repeat(3, 300px);
     justify-content: center;
     align-items: center;
     grid-gap: 15px;
-    height: 60vh;
+    height: 100vh;
 
+}
+.grid2 {
+    margin: 8% 0 8% 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#mapa {
+    position: relative;
+    width: 960px;
+    height: 600px;
+}
+
+.introduction {
+    margin: 0;
 }
 
 #lightbox {
@@ -23,6 +38,14 @@
     background-color: rgba(0,0,0, .8);
     display: none;
 }
+#lightbox img {
+    background-color: black;
+    max-width: 90%;
+    max-height: 80%;
+    padding: 3px;
+    border: 3px solid white;
+}
+
 
 #lightbox.active {
     display: flex;
