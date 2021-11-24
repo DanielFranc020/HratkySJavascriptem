@@ -1,8 +1,8 @@
-// const config = {
-//     type: "carousel",
-//     perView: 1
-//   };
-//     new Glide('.glide', config).mount()
+const config = {
+    type: "carousel",
+    perView: 1
+  };
+    new Glide('.glide', config).mount()
 
 
 const lightbox = document.createElement('div')
