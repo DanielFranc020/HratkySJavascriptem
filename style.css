@@ -77,7 +77,6 @@ footer {
     background-color: lightgrey;
     display: flex;
     justify-content: center;
-    margin-top: 25%;
 }
 footer > a {
     text-decoration: none;
@@ -131,12 +130,7 @@ footer > a {
     height: auto;
 }
 
-.posledni {
-    padding-bottom: 0 !important;
-    position: absolute;
-}
-
 .tabulka {
-    width: 700px;
+    width: 900px;
 }
 
